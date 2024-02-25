@@ -223,6 +223,7 @@ if b:file_extensions ==# 'asm'
     syntax match assemblyMacro  /#[_a-zA-Z][_a-zA-Z0-9]*/
     syntax match assemblyNumber /#-\?\d\+/
     syntax match assemblyNumber /#([^)]\+)/
+    syntax match assemblyNumber /0x[0-9]*\|[0-9]\|\.[0-9]/
     " TODO(compnerd) add floating point and hexadecimal numeric literal
 
     " NOTE(compnerd) this must be matched after numerics
