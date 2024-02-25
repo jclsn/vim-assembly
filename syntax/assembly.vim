@@ -106,6 +106,7 @@ if b:file_extensions ==# 'asm'
     syntax keyword assemblyMnemonic B.HI B.LS B.GE B.LT B.GT B.LE B.AL B.NV
     syntax keyword assemblyMnemonic B BFI BFM BFXIL BIC BICS BL BLR BR BRK
 
+    syntax keyword assemblyMnemonic CALL
     syntax keyword assemblyMnemonic CBNZ CBZ CCMN CINC CINV CLREX CLS CLZ CMN CMP
     syntax keyword assemblyMnemonic CNEG CRC32B CRC32H CRC32W CRC32X CRC32CB CRC32CH
     syntax keyword assemblyMnemonic CRC32CW CRC32CX
@@ -117,7 +118,9 @@ if b:file_extensions ==# 'asm'
 
     syntax keyword assemblyMnemonic HINT HLT HVC
 
-    syntax keyword assemblyMnemonic IC ISB
+    syntax keyword assemblyMnemonic IC ISB INT
+
+    syntax keyword assemblyMnemonic JMP
 
     syntax keyword assemblyMnemonic LDAR LDARB LDARH LDAXP LDAXR LDAXRB LDAXRH LDNP
     syntax keyword assemblyMnemonic LDP LDPSW LDR LDRB LDRH LDRSH LDRSW LDTR LDTRB
@@ -131,7 +134,7 @@ if b:file_extensions ==# 'asm'
 
     syntax keyword assemblyMnemonic ORN ORR
 
-    syntax keyword assemblyMnemonic PRFM PRFUM
+    syntax keyword assemblyMnemonic PRFM PRFUM POP
 
     syntax keyword assemblyMnemonic RBIT RET REV REV16 REV32 ROR RORV
 
